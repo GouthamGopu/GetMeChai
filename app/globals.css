@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* For Webkit browsers (Chrome, Safari) */
+.supporters::-webkit-scrollbar {
+  width: 6px; /* Adjust the width of the scrollbar */
+}
+
+.supporters::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Track background color */
+  border-radius: 10px;
+}
+
+.supporters::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* Scrollbar color */
+  border-radius: 10px;
+  border: 2px solid #2d2d2d; /* Optional: create space between the scrollbar and track */
+}
+
+/* For Firefox */
+.supporters {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #2d2d2d;
+}
